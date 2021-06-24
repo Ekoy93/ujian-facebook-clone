@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Name"
+        android:textColor="@color/purple_700"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toTopOf="@+id/view5" />
+
+    <TextView
+        android:id="@+id/id_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="date"
+        app:layout_constraintStart_toStartOf="@+id/id_name"
+        app:layout_constraintTop_toBottomOf="@+id/id_name" />
+
+    <TextView
+        android:id="@+id/id_posts"
+        android:layout_width="390dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:text="posts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/id_date"
+        app:layout_constraintTop_toBottomOf="@+id/id_date" />
+
+    <TextView
+        android:id="@+id/id_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="like"
+        app:layout_constraintStart_toStartOf="@+id/id_posts"
+        app:layout_constraintTop_toBottomOf="@+id/id_posts" />
+
+    <TextView
+        android:id="@+id/id_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:text="comment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_posts" />
+
+    <TextView
+        android:id="@+id/id_commentsender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Comment sender"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/id_like"
+        app:layout_constraintTop_toBottomOf="@+id/id_like" />
+
+    <TextView
+        android:id="@+id/id_textcomment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Textcomment"
+        app:layout_constraintStart_toStartOf="@+id/id_commentsender"
+        app:layout_constraintTop_toBottomOf="@+id/id_commentsender" />
+</androidx.constraintlayout.widget.ConstraintLayout>
